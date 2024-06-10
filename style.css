@@ -12,7 +12,7 @@
     --color3: #536d88;
     --color4: #b49b85;
     --color5: #eac195;
-    --color6: #fde9d4;
+    --color6: #ffffff;
 }
 
 
@@ -24,9 +24,8 @@ body{
 
 header{
     display: flex; /*alinha os itens lado a lado*/
-    justify-content: space-around;
     align-items: center; /*alinha ao centro*/
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     padding: .8rem;
     background-color: var(--color1);
@@ -35,19 +34,23 @@ header{
 
 .box-img-header{
     height: 100%;
+    margin-left: 1rem;
 }
 
 .img-logo{
     max-width: 50px;
     height: 100%;
+    border-radius: 5px;
 }
 
 nav{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-grow: 0.5;
+    font-size: 1.2rem;
 }
 
 .nav-links{
@@ -56,9 +59,8 @@ nav{
 }
 
 .nav-links:hover{
-    color: var(--color5);
+    color: rgb(223, 106, 252);
     transition: .4s;
-    text-decoration: underline;
     text-underline-offset: 5px; /*espaço entre o underline e o link*/
 }
 
